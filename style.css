@@ -1,0 +1,290 @@
+/*
+Theme name:regnoDiDavid
+Author: Astrid JONATHAN
+Author URL: http://astridjonathan.com
+Description: Thème pour site élevage de chiens
+version: 1.0a
+
+*/
+
+body{
+    font-family: 'Roboto Slab', serif;
+    color:white ;
+    background-color: black;
+    text-decoration:none;
+
+}
+ul,li{
+    list-style: none !important;
+    text-decoration: none !important;
+    margin:0;
+}
+
+h2{
+    font-family: 'Neuton', serif;
+    font-size:2em;
+}
+
+a{
+    color:white !important;
+    text-decoration:none;
+    
+}
+a:hover{
+    text-decoration:none;
+ 
+}
+
+.accroche{
+    font-family: 'Handlee', cursive;
+}
+
+
+/***************** Classe commune *********************/
+.bg-black{
+    background-color:rgb(34, 31, 31);
+    color:white;
+}
+.bg-darkM{
+    background-color: #332535 !important;
+}
+
+.bg-yellow{
+    background-color: #f8c317 !important;
+}
+.darkM{
+    color: #332535 !important;
+}
+
+.yellow{
+    color: #f8c317 !important;
+}
+.bg-grey{
+    background-color: #D4D6D5 !important;
+}
+
+.borderBottomYellow {
+    border-bottom: 4px solid #f8c317;
+}
+.borderTopYellow {
+    border-top: 4px solid #f8c317;
+}
+
+.borderleft{
+   margin-top:6px;
+    border-left: 4px solid black;
+    margin-bottom:6px;
+}
+
+u{
+    text-decoration-line: none;
+    border-bottom: 2px solid #f8c317 ;
+}
+/***************** Menu *********************/
+.menu li a:hover{
+    border-bottom: 2px solid #f8c317;
+}
+.menu-menu-secondaire a{
+    font-weight: bold ;
+}
+.menu-menu-secondaire a:hover{
+    border-bottom: 2px solid black !important;
+}
+ul#menu-menu-principal.menu{
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.menu li {
+      margin: 20px;
+    padding-left: 50px;
+    list-style: none;
+}
+.menu{
+
+    font-family: 'Roboto', sans-serif;
+}
+
+button.navbar-toggler{
+    color:white !important;
+}
+/***************** Projecteur *********************/
+
+.rdd__slider{
+    width:100%;
+    min-height:23vh;
+    height:100%;
+    object-fit: cover;
+    left:0;
+   
+}
+
+/***************** How It Works *********************/
+#howItWorks, #howItWorks h3, #howItWorks p{
+    color:black !important;
+}
+#howItWorks img{
+    width :80px;
+    height : 80px;
+    /*border: 2px solid #f8c317;*/
+}
+/***************** Article *********************/
+article u{
+    text-decoration-line: none;
+    border-bottom: 2px solid #f8c317 ;
+}
+
+
+.rdd__articleImage{
+    width:100%;
+    min-height:15vh;
+    height:100%;
+    object-fit: cover;
+   
+}
+
+
+/***************** Partenaire *********************/
+
+#partner img{
+    width : 120px;
+    height : 120px;
+
+    /*border: 2px solid #f8c317;*/
+
+}
+.grayscale img{
+        filter: grayscale(1);
+        -webkit-filter: grayscale(1);
+        -moz-filter: grayscale(1);
+        -o-filter: grayscale(1);
+        -ms-filter: grayscale(1);
+}
+.grayscale img:hover{
+        filter: grayscale(0);
+        -webkit-filter: grayscale(0);
+        -moz-filter: grayscale(0);
+        -o-filter: grayscale(0);
+        -ms-filter: grayscale(0);
+}
+
+/***************** Footer *********************/
+
+#googleMap{
+
+    /*border: 2px solid #f8c317 ;*/
+    width: 40%;
+    height: 40%;
+
+}
+footer{
+    font-size: 1.25em;
+}
+footer u{
+    text-decoration-line: none;
+    border-bottom: 2px solid #f8c317 ;
+}
+#socialMedia ul{
+    display: flex;
+justify-content: space-around;
+font-size: 2em;
+}
+#socialMedia .fab.fa a:hover{
+    background-color: #f8c317 ;
+}
+
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+    .menu-menu-principal ul{
+        flex-direction: row;
+        margin: 1.5rem;
+        justify-content: center;
+    }
+  
+    
+  
+    article h2 u {
+        display: block;
+        margin: auto;
+        
+    }
+    #enSavoirPlus{
+        display: block;
+        margin: auto;
+    }
+   
+    footer ul{
+     
+        padding-left: 15%;
+    }
+    #googleMap{
+        width: 100%;
+        position: none;
+      
+    }
+    #googleMap iframe{
+    
+    }
+
+    #newsletterDiv{
+        padding-top:15px;
+    }
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    .menu{
+        flex-direction: row;
+        margin: 1.5rem;
+        justify-content: center;
+    }
+    article h2 u {
+        display: block;
+        margin: auto;
+        
+    }
+    #enSavoirPlus{
+        display: block;
+        margin: auto;
+    }
+   
+    footer ul{
+        width: 100%;
+        padding-left: 30%;
+    }
+    #googleMap{
+        width: 100%;
+        position: none;
+
+        margin:10px;
+
+        
+    }
+   #newsletterDiv{
+       padding-top:15px;
+   }
+ }
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #menuprincipal .navbar-nav{
+        flex-direction: row;
+        justify-content: center;
+       
+    }
+
+    ul#menu-menu-principal.menu{
+        flex-direction: row;
+        margin: 1.5rem;
+        justify-content: center;
+    }
+  
+    #menuprincipal .navbar-nav li{
+        padding: 10px;
+    }
+    footer ul{
+       width: 100%;
+    }
+}
